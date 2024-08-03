@@ -126,6 +126,3 @@ Here's a summary of the methodologies used in your code along with potential cha
 - **Computational Resources**: Training large models like GPT-2 requires substantial computational resources, which might be a constraint.
 
 Addressing these challenges involves careful preprocessing, tuning model and training parameters, and potentially incorporating additional techniques such as data augmentation, advanced preprocessing, or using a more domain-specific model.
-
-## Rouge Score Comparision
-![image](https://github.com/user-attachments/assets/81d1eacb-e632-4be4-9e83-75a3f4f024a3)
