@@ -126,3 +126,18 @@ Here's a summary of the methodologies used in your code along with potential cha
 - **Computational Resources**: Training large models like GPT-2 requires substantial computational resources, which might be a constraint.
 
 Addressing these challenges involves careful preprocessing, tuning model and training parameters, and potentially incorporating additional techniques such as data augmentation, advanced preprocessing, or using a more domain-specific model.
+
+## Tabular comparison of the two models based on BLEU and ROUGE scores:
+
+![image](https://github.com/user-attachments/assets/e875f404-d6b4-4ebd-88c6-0f5adc7cddd4)
+
+Observations:
+BLEU Score: GPT-2 performs better, indicating higher n-gram overlap.
+ROUGE-1: BART performs better, suggesting better recall of single-word matches.
+ROUGE-2: GPT-2 performs better, indicating better recall of 2-gram matches.
+ROUGE-L and ROUGE-Lsum: BART performs slightly better, suggesting better performance in capturing longer sequences and overall summary structure.
+
+
+
+
+
