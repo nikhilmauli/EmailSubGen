@@ -101,32 +101,6 @@ Here's a summary of the methodologies used in your code along with potential cha
 ### 7. **Model Saving**
 - **Model Saving**: The trained model is saved to a local directory using the `save_model` method of the `Trainer` class.
 
-## Challenges Faced
-
-### 1. **Data Quality and Preprocessing**
-- **Inconsistent Formats**: Emails might have inconsistent formats, making it difficult to accurately extract subject lines.
-- **Noise in Text**: Emails could contain signatures, disclaimers, and other noise that can affect model performance.
-
-### 2. **Model and Tokenizer Limitations**
-- **Tokenization Issues**: Tokenizer might split words incorrectly or handle special characters poorly.
-- **Model Size and Memory**: GPT-2 is a large model and can be memory-intensive, especially for long sequences and large batch sizes.
-
-### 3. **Training and Evaluation**
-- **Overfitting**: With a limited dataset, there is a risk of overfitting, where the model performs well on training data but poorly on unseen data.
-- **Evaluation Strategy**: The evaluation strategy might need adjustments depending on the dataset's characteristics and the model's performance.
-
-### 4. **Text Generation**
-- **Coherence and Relevance**: Generated subject lines might not always be coherent or relevant to the email content.
-- **Length Control**: Ensuring the generated subject lines are of appropriate length can be challenging.
-
-### 5. **Generalization**
-- **Domain Specificity**: The model trained on a specific dataset (e.g., Enron emails) might not generalize well to other email datasets or domains.
-
-### 6. **Resource Constraints**
-- **Computational Resources**: Training large models like GPT-2 requires substantial computational resources, which might be a constraint.
-
-Addressing these challenges involves careful preprocessing, tuning model and training parameters, and potentially incorporating additional techniques such as data augmentation, advanced preprocessing, or using a more domain-specific model.
-
 ## Tabular comparison of the two models based on BLEU and ROUGE scores:
 
 ![image](https://github.com/user-attachments/assets/e875f404-d6b4-4ebd-88c6-0f5adc7cddd4)
@@ -136,6 +110,11 @@ BLEU Score: GPT-2 performs better, indicating higher n-gram overlap.
 ROUGE-1: BART performs better, suggesting better recall of single-word matches.
 ROUGE-2: GPT-2 performs better, indicating better recall of 2-gram matches.
 ROUGE-L and ROUGE-Lsum: BART performs slightly better, suggesting better performance in capturing longer sequences and overall summary structure.
+
+
+## HuggingFace App 
+  - https://huggingface.co/spaces/maulinikhil/email_sub_gen
+
 
 
 
