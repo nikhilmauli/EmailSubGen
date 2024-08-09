@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+gradio
+torch
+transformers
+nltk
+evaluate
+safetensors
