@@ -111,6 +111,45 @@ ROUGE-1: BART performs better, suggesting better recall of single-word matches.
 ROUGE-2: GPT-2 performs better, indicating better recall of 2-gram matches.
 ROUGE-L and ROUGE-Lsum: BART performs slightly better, suggesting better performance in capturing longer sequences and overall summary structure.
 
+# Q&A
+
+## Step 1: Data Preprocessing
+
+Data Cleaning: Remove any irrelevant or noisy data, such as headers and extra symbols from the Q & A pairs.
+Tokenization: Tokenize both the questions and answers to feed into the generative model.
+Removing Answer Prefix: Strip any "Answer:" prefixes to ensure clean output.
+Padding and Truncation: Adjust the length of the sequences to ensure they fit the model input size.
+
+## Step 2: Model Selection
+
+Pre-trained GPT-2 Model: Utilize a pre-trained GPT-2 model, fine-tuned for text generation, particularly for generating answers in response to questions.
+
+
+## Step 3: Model Fine-tuning
+
+Fine-tuning GPT-2: Fine-tune the GPT-2 model on the Q & A dataset to enable it to generate precise answers.
+Loss Function: Use cross-entropy loss to minimize the gap between the generated answer and the actual answer.
+Optimization: Use AdamW as an optimizer to adapt the model's weights efficiently during training.
+
+
+## Step 4: Evaluation
+
+Evaluation Metrics: Use ROUGE score to measure the model’s accuracy in generating correct answers.
+Manual Validation: Manually evaluate generated answers for coherence, relevance, and correctness.
+
+![Screenshot 2024-09-26 152628](https://github.com/user-attachments/assets/ab2ef3a1-9329-4502-9c25-032048cf37c8)
+
+## Demonstration 
+
+![Screenshot 2024-09-26 155557](https://github.com/user-attachments/assets/91cd7832-e880-4638-92e8-67b102fb5a74)
+
+
+![Screenshot 2024-09-26 153945](https://github.com/user-attachments/assets/30eb87c8-ae20-42c2-9c35-6ff8406e0558)
+
+
+
+
+
 
 ## HuggingFace App 
   - https://huggingface.co/spaces/maulinikhil/email_sub_gen
